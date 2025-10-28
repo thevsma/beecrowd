@@ -15,4 +15,5 @@ add_executable(beecrowd
         1076/main.c
         2300/main.c
         2440/main.c
-        1128/main.c)
+        1128/main.c
+        1610/main.c)
