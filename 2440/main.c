@@ -3,7 +3,7 @@
 #define MAX_N 50001
 
 int pai[MAX_N];
-int N, M;
+int A, S;
 
 int find(int i) {
     if (pai[i] == i) {
@@ -27,15 +27,15 @@ int unite(int a, int b) {
 
 
 int main() {
-    scanf("%d", &N);
-    scanf("%d", &M);
+    scanf("%d", &A);
+    scanf("%d", &S);
 
-    int numero_de_familias = N;
-    for (int i = 1; i <= N; i++) {
+    int numero_de_familias = A;
+    for (int i = 1; i <= A; i++) {
         pai[i] = i;
     }
 
-    for (int k = 0; k < M; k++) {
+    for (int k = 0; k < S; k++) {
         int a, b;
         scanf("%d %d", &a, &b);
 
